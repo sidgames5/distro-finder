@@ -1,0 +1,54 @@
+.card {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    margin: 25px;
+}
+
+* {
+    font-family: Cantarell, Ubuntu, "Trebuchet MS", Arial, sans-serif;
+    color: white;
+}
+
+button {
+    background-color: rgba(253,29,29,1);
+    padding: 10px;
+    font-size: large;
+    border: 4px solid rgba(252, 176, 69, 1);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+button:hover {
+    background-color: rgb(165, 20, 20);
+    border: 4px solid rgba(131,58,180,1);
+    transition: background-color, border-bottom-color, border-left-color, border-right-color, border-top-color;
+    transition-duration: 250ms;
+}
+
+body {
+    background: rgb(131,58,180);
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.fdist button {
+    background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 10px;
+    font-size: large;
+    border: 4px solid rgba(253,29,29,1);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.fdist button:hover {
+    background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border: 4px solid rgba(131,58,180,1);
+    transition: background-color, border-bottom-color, border-left-color, border-right-color, border-top-color;
+    transition-duration: 250ms;
+}
