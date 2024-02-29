@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="test.css">
+
+    <script src="test.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,10 +20,27 @@
             <p>You will be asked a few questions, and you will get a few recommendations for linux distros. Make sure to try out your recommended distros before fully committing to one.</p>
         </div>
         <div class="card test" align="center">
-            <h1 class="testquestion">Begin the test</h1>
-            <div class="testbuttons">
-                <button>Start</button>
-            </div>
+<!--            <h1 id="testquestion">Begin the test</h1>-->
+<!--            <div id="testbuttons">-->
+<!--                <button onclick="start()">Start</button>-->
+<!--            </div>-->
+            <form action="testresult.html" method="get">
+                <h3>What is your current operating system?</h3>
+                <input type="radio" id="currentOS_win" name="win">
+                <label for="currentOS_win">Windows</label>
+                <input type="radio" id="currentOS_mac" name="mac">
+                <label for="currentOS_mac">MacOS</label>
+                <input type="radio" id="currentOS_other" name="other">
+                <label for="currentOS_other">Other</label>
+
+                <h3>Are you familiar with the command line?</h3>
+                <input type="radio" id="cli_no" name="no">
+                <label for="cli_no">No</label>
+                <input type="radio" id="cli_somewhat" name="somewhat">
+                <label for="cli_somewhat">Somewhat</label>
+                <input type="radio" id="cli_yes" name="yes">
+                <label for="cli_yes">Yes</label>
+            </form>
         </div>
     </div>
 </body>
